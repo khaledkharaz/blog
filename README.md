@@ -1,1 +1,1 @@
-# kharaz-blog
+blog
