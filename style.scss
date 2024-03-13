@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic);
+
 html {
   box-sizing: border-box;
 }
@@ -25,12 +26,14 @@ footer {
   margin-top: 100px;
   padding: 30px;
   background: #f4821c;
+
   p {
     font-family: "Playfair Display", serif;
     font-style: italic;
     text-align: center;
     color: white;
   }
+
   .links {
     color: white;
 
@@ -39,11 +42,13 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+
     a {
       margin-right: 50px;
     }
   }
 }
+
 .circle {
   width: 100px;
   height: 100px;
@@ -556,11 +561,13 @@ body {
   margin: 0 auto;
   //   padding-bottom: 5%;
 }
+
 .circle-title {
   font-family: "Playfair Display", serif;
   font-style: italic;
   font-size: 20px;
 }
+
 .post h1 {
   font-family: "Playfair Display", serif;
   font-style: italic;
@@ -650,6 +657,7 @@ body {
   color: #423b35;
   text-decoration: none;
 }
+
 .arabic h1,
 .arabic p {
   text-align: right;
@@ -661,6 +669,7 @@ body {
   align-items: end;
   margin-top: 30px;
 }
+
 .post_header span:last-child {
   margin-right: 0;
 }
@@ -686,6 +695,11 @@ body {
   height: 100px;
   font-size: 20px;
 }
+
 .social-p {
   font-size: 18px;
+}
+
+footer p {
+  text-align: center;
 }
