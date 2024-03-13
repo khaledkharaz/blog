@@ -22,6 +22,12 @@
   <div class="circle-wrap">
     <div class="circle">
       <p class="circle-title">K.Kharaz Blog</p>
+      <!-- <button onclick="myFunction(`test parameter`)">Click me</button> -->
+
+
+      <p id="demo"></p>
+
+
     </div>
   </div>
   <div class="wrap">
@@ -37,10 +43,13 @@
           له من شر حقيد يا له من شر مطلق ولكن المزعج والحزن انه باسم الله او
           باسم الوطن، وباسم العدل او باسم اي مسمى سامي وله رمزية كبيرة
         </p>
-        <div class="read-more-raw">
+        <div class="read-more-raw" onclick="()=>{console.log(`read more`)}">
           <h2>Dec 19, 2023</h2>
           <a href="https://docs.google.com/document/d/e/2PACX-1vQtM6BMOtQPURIg4DjFLGYPluAbfyvKeIfYbvpbJ2EYasoDWL12hpum7aE2x8gMLRxKQjYZSuY-b3Rf/pub"
-            class="readmore" target="_blank">Read More</a>
+            class="readmore" target="_blank">
+            <span
+              onclick="myFunction('https://docs.google.com/document/d/e/2PACX-1vQtM6BMOtQPURIg4DjFLGYPluAbfyvKeIfYbvpbJ2EYasoDWL12hpum7aE2x8gMLRxKQjYZSuY-b3Rf/pub')">Read
+              More</span></a>
         </div>
       </div>
     </div>
@@ -57,7 +66,11 @@
         <div class="read-more-raw">
           <h2>Dec 15, 2023</h2>
           <a href="https://docs.google.com/document/d/e/2PACX-1vTSfeajQyaPQr28KqLMIZeWDi4USzfADEReer-WOOTMGv9s4zdejLqJdXpRTgsDUNoNAKJoEZ-uas21/pub"
-            class="readmore" target="_blank">Read More</a>
+            class="readmore" target="_blank">
+            <span
+              onclick="myFunction('https://docs.google.com/document/d/e/2PACX-1vTSfeajQyaPQr28KqLMIZeWDi4USzfADEReer-WOOTMGv9s4zdejLqJdXpRTgsDUNoNAKJoEZ-uas21/pub')">Read
+              More</span></a>
+          </a>
         </div>
       </div>
     </div>
@@ -280,6 +293,13 @@
   </footer> -->
   </div>
 </body>
+<script>
+  function myFunction(val) {
+    // document.getElementById("demo").innerHTML = val;
+    const tracker = window.ga.getAll()[0]
+    tracker.send('event', 'linkto', val)
+  }
+</script>
 
 </html>
 <!-- 
